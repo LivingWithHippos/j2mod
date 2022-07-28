@@ -12,7 +12,6 @@
             <outputDirectory>/</outputDirectory>
             <useProjectArtifact>true</useProjectArtifact>
             <unpack>true</unpack>
-            <scope>test</scope>
             <excludes>
                 <exclude>org.apache.commons:commons-exec</exclude>
                 <exclude>junit:junit</exclude>
