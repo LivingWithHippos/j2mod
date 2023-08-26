@@ -1,7 +1,7 @@
 <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
-    <!-- TODO: a jarjar format would be better -->
+    <!-- execute with mvn clean compile assembly:single -->
     <id>jar-with-dependencies</id>
     <formats>
         <format>jar</format>
@@ -13,6 +13,10 @@
             <useProjectArtifact>true</useProjectArtifact>
             <unpack>true</unpack>
             <scope>compile</scope>
+            <excludes>
+                <exclude>org.slf4j:slf4j-api</exclude>
+                <!-- Add other dependencies to exclude here -->
+            </excludes>
         </dependencySet>
     </dependencySets>
 </assembly>
