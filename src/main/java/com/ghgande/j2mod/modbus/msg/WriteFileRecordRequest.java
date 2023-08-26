@@ -19,6 +19,8 @@ import com.ghgande.j2mod.modbus.Modbus;
 import com.ghgande.j2mod.modbus.msg.WriteFileRecordResponse.RecordResponse;
 import com.ghgande.j2mod.modbus.net.AbstractModbusListener;
 import com.ghgande.j2mod.modbus.procimg.*;
+// explicit import to avoid name clash with java.lang.Record
+import com.ghgande.j2mod.modbus.procimg.Record;
 
 import java.io.DataInput;
 import java.io.DataOutput;
